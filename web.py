@@ -13,7 +13,7 @@ def add_todo():
 todos = functions.get_todos()
 st.title("My todo app")
 st.subheader("This is from mega project")
-st.write("This app is to increase")
+st.write("Dynamic list")
 
 for index, todo in enumerate(todos):
     checkbox = st.checkbox(todo, key=todo)
@@ -25,4 +25,4 @@ for index, todo in enumerate(todos):
 
 st.text_input(label="Enter a todo", placeholder="Add a new todo...", on_change=add_todo, key='new_todo')
 
-st.session_state
+# st.session_state
