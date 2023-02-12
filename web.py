@@ -10,10 +10,11 @@ def add_todo():
     print(todo)
 
 
+st.set_page_config(layout="wide")
 todos = functions.get_todos()
 st.title("My todo app")
 st.subheader("This is from mega project")
-st.write("Dynamic list")
+st.write("Dynamic list to increase your <b>productivity</b>", unsafe_allow_html=True)
 
 for index, todo in enumerate(todos):
     checkbox = st.checkbox(todo, key=todo)
